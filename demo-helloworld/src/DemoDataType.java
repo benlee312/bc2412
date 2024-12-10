@@ -1,4 +1,4 @@
-public class Helloworld {
+public class DemoDataType {
   public static void main(String [] args){
     // Comment. Welcome to bootcamp.(// can draw notice)
     // ! 1. Data Type (Primitive)
@@ -62,5 +62,26 @@ public class Helloworld {
     // ! NOt allow assign a higher level value to a lower level type of variable
     // int -> double (upcast)
     // doublt -> int (downcast)
+
+    // ! Store Integer. Java: int, byte, short, long
+    int value = 1000000;
+    int value2 = 1_000_000;
+    int maxInterger = -2_147_483_648;
+    // int maxInterger = 2_147_483_648
+    // int minInteger = -2_147_483_649
+    // !byte -128 to 127
+    // assign an int value to byte type variable
+    byte b1 =-128;
+    byte b2 =127;
+    // !Short -32768 to 32767
+    short s1 = -32768;
+    short s2 = 32767;
+    // !long -2 ^ 63 
+    //2_147_483_648-> int value
+    long l1 = 2_147_483_648;
+    // ! Step 1: declare an int value (fail)
+    // ! Step 2: convert an int value to long type
+    // ! Declare a hardcode long value, you should always add "L"
+    long l2 = 2_147_483_648L; // "L" -> declare it is a long value
     }
 }
