@@ -1,7 +1,7 @@
 public class DemoDataType {
   public static void main(String [] args){
     // Comment. Welcome to bootcamp.(// can draw notice)
-    // ! 1. Data Type (Primitive)
+    // ! 1. Data Type (8 Primitives)
     // int-> Integer
     // x, dayOfWeek -> variable
     int x = 3;
@@ -10,6 +10,13 @@ public class DemoDataType {
     double y2 = 3.2;
     // variable Java naming convension
     // caml case: dayOfWeek, y2, letter first and number later
+
+    // ! x ccannot be declared twice
+
+    //Declaratopm
+    int x100;
+    //v Value Assignment
+    X100 = 9
 
     // Re-assignment
     x = 101;
@@ -78,10 +85,45 @@ public class DemoDataType {
     short s2 = 32767;
     // !long -2 ^ 63 
     //2_147_483_648-> int value
-    long l1 = 2_147_483_648;
+    long l1 = 2_147_483_647;
     // ! Step 1: declare an int value (fail)
     // ! Step 2: convert an int value to long type
     // ! Declare a hardcode long value, you should always add "L"
     long l2 = 2_147_483_648L; // "L" -> declare it is a long value
+
+    // float -> double
+    double d1 =10.2; //double value
+    double d2 = 10.2d; // 10.2d -> double value
+    float f1 = 10.2f; // 10.2f -> float value
+    float f2 = 10.222222f;
+
+    // conversion
+    float f4 = 10.2f;
+    double d3 = f4; //assign float value to double variable
+    //float f5 = d3;
+    double d4 = 10.2f; // upcasting (float -> double)
+
+    double d5= f4 + 10.2d; //20.399999809265136
+    System.out.println(d5);
+    double d6 = 0.2 + 0.1; //0.30000000000000004
+    System.out.println(d6);//don't use double to caculate the math + - * / don't use double
+
+    char c = '!';
+    char c2 = '1';
+    char c3 = '!';
+    char c4 = ' ';
+    //char c5 = ' '; // ! at least one character (space is character)
+
+    // boolean
+    boolean b3 = true;
+    boolean b4 = false;
+    //boolean b5 = 531;
+    boolean isSmoker = false;
+    int age = 66;
+    boolean isElderly = age > 65; // "age > 65" -> asking if age> 65 (yes no question)
+    System.out.println(isElderly);//true
+    int age2 = 18;
+    boolean isAdult = age2 >= 18;
+    System.out.println(isAdult);//true
     }
 }
