@@ -16,9 +16,9 @@ public class Exercise20241210 {
     // byte, short, int, long
     byte maxByte = 127;
     byte b2 = -128;
-    maxByte = maxByte + 1; // Java: is it safe? not safe
+    //maxByte = maxByte + 1; // Java: is it safe? not safe
     System.out.println(maxByte); // 128, overflow
-    b2 = b2 / 1;
+    //b2 = b2 / 1;
     short s1 = 32767;
     short s2 = -32768;
     int x = maxByte; // Java: is it safe? it is safe
@@ -32,6 +32,28 @@ public class Exercise20241210 {
     // (1.1) compile fail. for example (missing ; -> syntax error)
     // (1.2) compile success -> class file
   // (2) Java Virtual Machine (JVM) -> convert class file to machine code -> execute machine code
+    long l100 = -5323412;
+    int x100 = 100;
+    byte b100 = 24;
+    short s100 = -23;
+    x100 = x100 ^ 5;
+    l100 = l100 + x100 - b100 * s100 * (l100 / s100 * b100 - l100 + x100) / b100 * s100;
+    System.out.println(l100);
+    //s100 = l100 + x100 - b100 * s100 * (l100 / s100 * b100 - l100 + x100) / b100 * s100;
+    //b100 = l100 + x100 - b100 * s100 * (l100 / s100 * b100 - l100 + x100) / b100 * s100;
+    //x100 = l100 + x100 - b100 * s100 * (l100 / s100 * b100 - l100 + x100) / b100 * s100
+    x100 = b100 + x100;
+    System.out.println(x100);
+    int x101 = 2_147_483_647;
+    int x102 = 2_147_483_647;
+    int x103 = x101 + x102;
+    System.out.println(x103);
+    x103 = x101 / x102;
+    System.out.println(x103);
+    x103 = x101 * x102;
+    System.out.println(x103);
+    x103 = x101 - x102;
+    System.out.println(x103);
   }
 
   }
