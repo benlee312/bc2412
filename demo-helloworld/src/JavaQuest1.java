@@ -53,7 +53,7 @@ public class JavaQuest1 {
     // Reading Example
     float fnumber = -130.20f; // By default, numbers are treated as double in Java.
     // Use suffix 'f' with value to make it float.
-    double dnumber = -20.50;
+    double dnumber = -20.50f;
     System.out.println("The variable fnumber is " + fnumber);
     System.out.println("The variable dnumber is " + dnumber);
 
