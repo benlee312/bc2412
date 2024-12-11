@@ -16,7 +16,7 @@ public class DemoDataType {
     //Declaratopm
     int x100;
     //v Value Assignment
-    X100 = 9
+    x100 = 9;
 
     // Re-assignment
     x = 101;
