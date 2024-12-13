@@ -125,5 +125,34 @@ public class DemoDataType {
     int age2 = 18;
     boolean isAdult = age2 >= 18;
     System.out.println(isAdult);//true
+
+    char q = 'a';
+    int u = q; // char value can be assigned to int ???
+    System.out.println(u);
+    // char -> int 
+
+    char q2 = 97;
+    System.out.println(q2);
+
+    //ASCII code (0-127)
+    // a -> 97
+    // b -> 98
+    // ...
+    char q3 = 48;
+    int u3 = q3;
+    System.out.println(p);
+    char q4 = 65;
+    System.out.println(q4);
+    int u4 = q4;
+    System.out.println(u4);
+
+        //char q3 = 70000; // !out of the range of char value
+        char q5 = 10000;
+        System.out.println(q5);
+        // byte -> short -> int -> long -> float -> double
+        // char -> int -> long -> float -> double
+    long l10 = 'a';
+    float f10 = 'a';
+    double d10 = 'a';
     }
 }
