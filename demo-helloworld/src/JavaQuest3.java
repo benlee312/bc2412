@@ -62,8 +62,10 @@ public class JavaQuest3 {
       number_OfDaysInMonth = 31;
     } else if (month == 4 || month == 6 || month == 9 || month == 11){
       number_OfDaysInMonth = 30;
-    } else {
+    } else if(month == 2){
       number_OfDaysInMonth = 28;
+    } else {
+      number_OfDaysInMonth = 0;
     }
 
     
