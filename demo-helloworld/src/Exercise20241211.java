@@ -26,7 +26,7 @@ public class Exercise20241211 {
     // o=21
     System.out.println(o);
 
-
+    
   }
   
 }

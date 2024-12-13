@@ -56,5 +56,22 @@ public class DemoString {
     System.out.println("hello".charAt(2));
     System.out.println("hello".length());
     //Only String can use as only String has tool, primitive has no method(tool)
+
+    // isEmpty ()
+    String s5 = "abc";
+    boolean isEmpty = s5.length() == 0;
+    System.out.println(isEmpty);
+    System.out.println(s5.isEmpty());
+
+
+    // substring
+    // abc
+    String substr = s5.substring(0, 2);
+    // ! s5's value doesn't change
+    // ! substr is storing a new String value returned by "substring"
+    System.out.println(substr);
+    System.out.println(s5.substring(0, 3));
+    System.out.println(s5.substring(0, s5.length()));
+    System.out.println(s5.substring(1));
     }
 }
