@@ -57,8 +57,24 @@ public class DemoForLoop {
       //int diff = oddSum > evenSum ? oddSum - evenSum : evenSum - oddSum;
       //System.out.println(diff);
 
-
-
+    int diff = 0;
+    int evenSum = 0;
+    int oddSum = 0;
+    for (int i = 0; i <= 20; i++){
+    if (i % 2 == 0){
+      evenSum = evenSum + i;
+    } else if (i % 2 > 0){
+      oddSum = oddSum + i;
+    }
+    if (evenSum > oddSum){
+      diff = evenSum - oddSum;
+    } else if (oddSum > evenSum){
+      diff = oddSum - evenSum;
+    }
+  }
+   System.out.println(evenSum);
+   System.out.println(oddSum);
+   System.out.println(diff);
 
 
     // System.out.println(i); // ! i is declared within the for loop.

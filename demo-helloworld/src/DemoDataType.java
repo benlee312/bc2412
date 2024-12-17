@@ -128,23 +128,24 @@ public class DemoDataType {
 
     char q = 'a';
     int u = q; // char value can be assigned to int ???
-    System.out.println(u);
+    System.out.println(u); //97
     // char -> int 
 
     char q2 = 97;
-    System.out.println(q2);
+    System.out.println(q2); // 'a'
 
     //ASCII code (0-127)
     // a -> 97
     // b -> 98
     // ...
     char q3 = 48;
+    System.out.println(q3); //'0'
     int u3 = q3;
-    System.out.println(p);
+    System.out.println(u3);//'48'
     char q4 = 65;
-    System.out.println(q4);
+    System.out.println(q4); // A
     int u4 = q4;
-    System.out.println(u4);
+    System.out.println(u4);// 65
 
         //char q3 = 70000; // !out of the range of char value
         char q5 = 10000;
